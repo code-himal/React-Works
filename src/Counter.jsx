@@ -8,6 +8,7 @@ function addValue() {
         setCounter(counter + 1);
         toast.info("Counter value is increased");
     }
+
 function addValue2() {
     if(counter > 0){
     setCounter(counter - 1);
@@ -24,7 +25,6 @@ function addValue2() {
    </>
   )
 }
-
 
 export default Counter
 

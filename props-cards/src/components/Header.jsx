@@ -1,0 +1,3 @@
+import { Dumbbell, ShoppingBag, Truck } from "lucide-react";
+import { NavLink } from "react-router-dom";
+export default function Header({ cartCount }) { return <><div className="announcement"><Truck size={14} /> Free shipping on orders over $150 <span>•</span> Easy 30-day returns</div><header className="site-header"><NavLink to="/" className="brand" aria-label="GymGrid home"><span className="brand-mark"><Dumbbell size={21} /></span><span>GYM<span>GRID</span></span></NavLink><nav aria-label="Primary navigation"><NavLink to="/" end>Shop</NavLink><NavLink to="/cart" className="cart-link"><ShoppingBag size={18} /> Cart <b>{cartCount}</b></NavLink></nav></header></>; }
